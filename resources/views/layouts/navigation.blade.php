@@ -1,8 +1,8 @@
 @php
     $links = [
+        ['route' => 'peminjamen.index', 'active' => 'peminjamen.*', 'label' => 'Peminjaman', 'show' => true],
         ['route' => 'bukus.index', 'active' => 'bukus.*', 'label' => 'Buku', 'show' => true],
         ['route' => 'category.index', 'active' => 'category.*', 'label' => 'Kategori', 'show' => true],
-        ['route' => 'peminjamen.index', 'active' => 'peminjamen.*', 'label' => 'Peminjaman', 'show' => true],
         ['route' => 'user.index', 'active' => 'user.*', 'label' => 'Anggota', 'show' => Gate::allows('admin')],
     ];
     $initial = mb_strtoupper(mb_substr(Auth::user()->name, 0, 1));
