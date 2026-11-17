@@ -118,17 +118,3 @@ Akun awal dibuat oleh seeder. Lihat `database/seeders` untuk email dan kata sand
 
 Alamat `/dashboard` tetap tersedia dan otomatis diarahkan ke halaman Peminjaman.
 
-## Struktur folder penting
-
-```
-app/Http/Controllers/    BukuController, PeminjamanController, CategoryController, UserController
-resources/views/
-  welcome.blade.php      Halaman beranda
-  layouts/               Layout dan navbar
-  bukus/                 Halaman buku
-  peminjamen/            Halaman peminjaman
-  category/              Halaman kategori
-  user/                  Halaman anggota
-public/images/           Gambar (ilustrasi perpustakaan)
-routes/web.php           Daftar route
-```
